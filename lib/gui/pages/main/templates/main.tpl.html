@@ -3,33 +3,32 @@
     <div class="box text-center relative" os-dropzone="image.selectImageByPath($file)">
 
       <div class="center-block">
-        <svg-icon path="main.selection.getImageLogo() || '../assets/image.svg'"></svg-icon>
+        <svg-icon path="'../assets/raspberrypi.svg'"></svg-icon>
       </div>
 
       <div class="space-vertical-large">
-        <div ng-hide="main.selection.hasImage()">
+        <div ng-hide="main.selection.hasImage() || main.selection.getCustomImageName()">
 			
 		    <!-- Single button using append-to-body -->
 			<div class="btn-group" uib-dropdown dropdown-append-to-body>
-					<button id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+					<button id="btn-append-to-body" type="button" class="button button-primary button-brick" uib-dropdown-toggle>
 						Select Model <span class="caret"></span>
 					</button>
 					<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
-						<li role="menuitem"><a href="#">Raspberry Pi Zero W</a></li>
-						<li role="menuitem"><a href="#">Raspberry Pi 3</a></li>
+						<li role="menuitem"><a ng-click="image.selectCustomImage('drideOSZ')" href="#">Raspberry Pi Zero W</a></li>
+						<li role="menuitem"><a ng-click="image.selectCustomImage('drideOS')" href="#">Raspberry Pi 3</a></li>
 						<li class="divider"></li>
 						<li role="menuitem" ng-click="image.openImageSelector()"><a href="#">Custom Image</a></li>
 					</ul>
 				  </div>
 
         </div>
-        <div ng-if="main.selection.hasImage()">
+        <div ng-if="main.selection.hasImage() || main.selection.getCustomImageName()">
           <div class="step-selection-text">
             <span
-              ng-click="main.showSelectedImageDetails()"
               class="step-image step-name"
-              ng-bind="main.selection.getImageName() || image.getImageBasename() | middleEllipses:20"
-              uib-tooltip="{{ image.getImageBasename() }}"></span>
+              ng-bind="main.selection.getCustomImageName() || main.selection.getImageName() || image.getImageBasename() | middleEllipses:20"
+              ></span>
             <span class="step-image step-size">{{ main.selection.getImageSize() | closestUnit }}</span>
           </div>
 
