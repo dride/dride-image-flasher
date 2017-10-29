@@ -55,9 +55,16 @@
       }
     },
     "@types/node": {
+<<<<<<< HEAD
       "version": "7.0.44",
       "resolved": "https://registry.npmjs.org/@types/node/-/node-7.0.44.tgz",
       "integrity": "sha512-5ZskbOk+/EIZErNRo8bgemhtw99PB+CsdOm2wM5qAgc+MwAVL6L9RZv2Hin7Y8S7FewCkPqNlw+3hTmT+PsnJA=="
+=======
+      "version": "7.0.46",
+      "from": "@types/node@>=7.0.18 <8.0.0",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-7.0.46.tgz",
+      "dev": true
+>>>>>>> 8caf03327cbd171fb3e6ffc6817e52e2e9746929
     },
     "@types/react": {
       "version": "15.0.24",
@@ -1108,6 +1115,11 @@
       "requires": {
         "delayed-stream": "0.0.5"
       }
+    },
+    "command-exists": {
+      "version": "1.2.2",
+      "from": "command-exists@latest",
+      "resolved": "https://registry.npmjs.org/command-exists/-/command-exists-1.2.2.tgz"
     },
     "command-join": {
       "version": "2.0.0",

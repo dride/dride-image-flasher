@@ -6,30 +6,28 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/desktop.css">
     <link rel="stylesheet" type="text/css" href="css/angular.css">
-
-    <!-- Enable debug information from all modules that use `debug` -->
-    <!-- See https://github.com/visionmedia/debug#browser-support -->
-    <script>
-      // Enable drivelist debugging information
-      // See https://github.com/resin-io-modules/drivelist
-      process.env['DRIVELIST_DEBUG'] = /drivelist|^\*$/i.test(process.env['DEBUG']) ? '1' : '';
-      window.localStorage.debug = process.env['DEBUG'];
-    </script>
-
     <script src="./app.js"></script>
   </head>
   <body ng-app="Etcher">
     <header class="section-header" ng-controller="HeaderController as header">
-      <button class="button button-link" ng-click="header.openHelpPage()">
-        <span class="glyphicon glyphicon-question-sign"></span>
+      <button class="button button-link"
+        ng-click="header.openHelpPage()"
+        tabindex="-1">
+        <span tabindex="4" class="glyphicon glyphicon-question-sign"></span>
       </button>
 
-      <button class="button button-link" ui-sref="settings" hide-if-state="settings">
-        <span class="glyphicon glyphicon-cog"></span>
+      <button class="button button-link"
+        ui-sref="settings"
+        hide-if-state="settings"
+        tabindex="-1">
+        <span tabindex="5" class="glyphicon glyphicon-cog"></span>
       </button>
 
-      <button class="button button-link" ui-sref="main" show-if-state="settings">
-        <span class="glyphicon glyphicon-chevron-left"></span> Back
+      <button class="button button-link"
+        tabindex="-1"
+        ui-sref="main"
+        show-if-state="settings">
+        <span tabindex="5" class="glyphicon glyphicon-chevron-left"></span> Back
       </button>
     </header>
 
