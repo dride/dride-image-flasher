@@ -8,15 +8,20 @@
 
       <div class="space-vertical-large">
         <div ng-hide="main.selection.hasImage()">
-          <button
-            class="button button-primary button-brick"
-            ng-click="image.openImageSelector()">Select image</button>
+			
+		    <!-- Single button using append-to-body -->
+			<div class="btn-group" uib-dropdown dropdown-append-to-body>
+					<button id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+						Select Model <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+						<li role="menuitem"><a href="#">Raspberry Pi Zero W</a></li>
+						<li role="menuitem"><a href="#">Raspberry Pi 3</a></li>
+						<li class="divider"></li>
+						<li role="menuitem" ng-click="image.openImageSelector()"><a href="#">Custom Image</a></li>
+					</ul>
+				  </div>
 
-          <p class="step-footer">
-            {{ ::image.mainSupportedExtensions.join(', ') }}, and
-            <span class="step-footer-underline"
-              uib-tooltip="{{ image.extraSupportedExtensions.join(', ') }}">others</span>
-          </p>
         </div>
         <div ng-if="main.selection.hasImage()">
           <div class="step-selection-text">
