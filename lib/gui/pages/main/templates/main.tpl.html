@@ -90,19 +90,19 @@
         <svg-icon path="'../assets/flash.svg'"
           disabled="main.shouldFlashStepBeDisabled()"></svg-icon>
       </div>
-
       <div class="space-vertical-large">
         <progress-button class="button-brick"
           tabindex="3"
           percentage="main.state.getFlashState().percentage"
           striped="{{ main.state.getFlashState().type == 'check' }}"
-          ng-attr-active="{{ main.state.isFlashing() ||  main.state.isDownloading()}}"
+          ng-attr-active="{{ main.state.isFlashing()}}"
           ng-click="flash.flashImageToDrive(main.selection.getImage(), main.selection.getDrive())"
           ng-disabled="main.shouldFlashStepBeDisabled() || main.state.getLastFlashErrorCode()">
             <span ng-bind="flash.getProgressButtonLabel()"></span>
         </progress-button>
-
-        <p class="step-footer step-footer-split" ng-show="main.state.getFlashState().speed && main.state.getFlashState().percentage != 100">
+		<p class="step-footer step-footer-split"
+		 ng-show="main.state.getFlashState().speed && main.state.getFlashState().percentage != 100"
+		 >
           <span ng-bind="main.state.getFlashState().speed.toFixed(2) + ' MB/s'"></span>
           <span>ETA: {{ main.state.getFlashState().eta | secondsToDate | amDateFormat:'m[m]ss[s]' }}</span>
         </p>

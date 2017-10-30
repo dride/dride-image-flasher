@@ -55,16 +55,9 @@
       }
     },
     "@types/node": {
-<<<<<<< HEAD
-      "version": "7.0.44",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-7.0.44.tgz",
-      "integrity": "sha512-5ZskbOk+/EIZErNRo8bgemhtw99PB+CsdOm2wM5qAgc+MwAVL6L9RZv2Hin7Y8S7FewCkPqNlw+3hTmT+PsnJA=="
-=======
       "version": "7.0.46",
-      "from": "@types/node@>=7.0.18 <8.0.0",
       "resolved": "https://registry.npmjs.org/@types/node/-/node-7.0.46.tgz",
-      "dev": true
->>>>>>> 8caf03327cbd171fb3e6ffc6817e52e2e9746929
+      "integrity": "sha512-u+JAi1KtmaUoU/EHJkxoiuvzyo91FCE41Z9TZWWcOUU3P8oUdlDLdrGzCGWySPgbRMD17B0B+1aaJLYI9egQ6A=="
     },
     "@types/react": {
       "version": "15.0.24",
@@ -1118,8 +1111,8 @@
     },
     "command-exists": {
       "version": "1.2.2",
-      "from": "command-exists@latest",
-      "resolved": "https://registry.npmjs.org/command-exists/-/command-exists-1.2.2.tgz"
+      "resolved": "https://registry.npmjs.org/command-exists/-/command-exists-1.2.2.tgz",
+      "integrity": "sha1-EoGcZPr5VEbsCuB/5sr7brNwiyI="
     },
     "command-join": {
       "version": "2.0.0",
@@ -1847,7 +1840,7 @@
       "resolved": "https://registry.npmjs.org/electron/-/electron-1.7.9.tgz",
       "integrity": "sha1-rdVOn4+D7QL2UZ7BATX2mLGTNs8=",
       "requires": {
-        "@types/node": "7.0.44",
+        "@types/node": "7.0.46",
         "electron-download": "3.3.0",
         "extract-zip": "1.6.5"
       },

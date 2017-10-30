@@ -1,9 +1,6 @@
 Dride Image Generator by Etcher
 ======
 
-This tool is used for generating drideOS image files.
-
-
 > Flash drideOS images to SD cards & USB drives, safely and easily.
 
 This tool is used for generating drideOS image files.

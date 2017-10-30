@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "make test",
-    "start": "electron lib/start.js",
+    "start": "electron lib/start.js --remote-debugging-port=8315",
     "postshrinkwrap": "node ./scripts/clean-shrinkwrap.js",
     "configure": "node-gyp configure",
     "build": "node-gyp build",
