@@ -6585,12 +6585,13 @@ svg-icon > img[disabled] {
 
 .footerBg {
   background-image: url(../assets/footer.svg);
-  width: 100%;
+  width: 120%;
   height: 76px;
   position: absolute;
   bottom: 0;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position-x: -100px; }
 
 .button-default:focus, .button-default:hover {
   color: #333; }
@@ -6617,7 +6618,7 @@ svg-icon > img[disabled] {
   margin-top: -9px; }
 
 .fx1 {
-  margin-left: -65px; }
+  margin-left: -95px; }
 
 .fx2 {
   top: 31px; }
