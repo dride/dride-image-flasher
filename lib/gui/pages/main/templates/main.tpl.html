@@ -1,7 +1,7 @@
 <div class="page-main row around-xs">
   <div class="col-xs-6">
 	<div class="col-xs-12 pfx" ng-controller="ImageSelectionController as image">
-		<div class="box text-left relative" os-dropzone="image.selectImageByPath($file)">
+		<div class="box text-left relative fx2" os-dropzone="image.selectImageByPath($file)">
 
 
 		<div class="space-vertical-large">
@@ -41,45 +41,44 @@
 	</div>
 
 	<div class="col-xs-12" ng-controller="DriveSelectionController as drive">
-		<div class="box text-left relative">
+		<div class="box text-left relative fx3">
+			<div class="space-vertical-large">
+				<div ng-hide="main.selection.hasDrive()">
 
-		<div class="space-vertical-large">
-			<div ng-hide="main.selection.hasDrive()">
+				<div>
+					<button class="button button-default btn-dride button-brick text-left selectDrive"
+					tabindex="{{ main.selection.hasDrive() ? -1 : 2 }}"
+					ng-click="drive.openDriveSelector()">Select drive <span class="caret"></span></button>
+				</div>
 
-			<div>
-				<button class="button button-default btn-dride button-brick text-left"
-				tabindex="{{ main.selection.hasDrive() ? -1 : 2 }}"
-				ng-click="drive.openDriveSelector()">Select drive <span class="caret"></span></button>
-			</div>
+				</div>
+				<div ng-show="main.selection.hasDrive()">
 
+				<div class="step-selection-text"
+					ng-class="{
+					'text-disabled': main.shouldDriveStepBeDisabled()
+					}"
+					uib-tooltip="{{ main.selection.getDrive().description }} ({{ main.selection.getDrive().displayName }})">
+					<span class="step-drive step-name">
+					<!-- middleEllipses errors on undefined, therefore fallback to empty string -->
+					{{ (main.selection.getDrive().description || "")}}
+					</span>
+					<span class="step-drive step-size">{{ main.selection.getDrive().size | closestUnit }}</span>
+				</div>
+				<button class="button button-link step-footer"
+					tabindex="{{ main.selection.hasDrive() ? 2 : -1 }}"
+					ng-click="drive.reselectDrive()"
+					ng-hide="main.state.isFlashing()">
+					<span class="edit-icons glyphicon glyphicon-pencil" aria-hidden="true"></span>
+				</button>
+				</div>
 			</div>
-			<div ng-show="main.selection.hasDrive()">
-
-			<div class="step-selection-text"
-				ng-class="{
-				'text-disabled': main.shouldDriveStepBeDisabled()
-				}"
-				uib-tooltip="{{ main.selection.getDrive().description }} ({{ main.selection.getDrive().displayName }})">
-				<span class="step-drive step-name">
-				<!-- middleEllipses errors on undefined, therefore fallback to empty string -->
-				{{ (main.selection.getDrive().description || "")}}
-				</span>
-				<span class="step-drive step-size">{{ main.selection.getDrive().size | closestUnit }}</span>
-			</div>
-			<button class="button button-link step-footer"
-				tabindex="{{ main.selection.hasDrive() ? 2 : -1 }}"
-				ng-click="drive.reselectDrive()"
-				ng-hide="main.state.isFlashing()">
-				<span class="edit-icons glyphicon glyphicon-pencil" aria-hidden="true"></span>
-			</button>
-			</div>
-		</div>
 		</div>
 	</div>
   </div>
 
 
-  <div class="col-xs-5" ng-controller="FlashController as flash">
+  <div class="col-xs-4 fx1" ng-controller="FlashController as flash">
     <div class="box text-center">
       <div class="space-vertical-large">
         <progress-button class="button-brick btn-progress"

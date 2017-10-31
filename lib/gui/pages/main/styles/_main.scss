@@ -127,7 +127,7 @@ svg-icon > img[disabled] {
 .btn-progress{
 	width: 100%;
 	height: 95px;
-
+	font-size: 20px;
 }
 .footerBg{
     background-image: url(../assets/footer.svg);
@@ -161,4 +161,25 @@ svg-icon > img[disabled] {
 }
 .pfy{
 	margin-top: -9px;
+}
+.fx1{
+    margin-left: -65px;
+}
+.fx2{
+	top: 31px;
+	.caret{
+		    margin-left: 6px;
+	}
+}
+.fx3 {
+  top: -18px;
+}
+
+#btn-append-to-body, .selectDrive{
+	padding-left: 27px;
+}
+.selectDrive{
+	.caret {
+	  margin-left: 6px;
+	}
 }

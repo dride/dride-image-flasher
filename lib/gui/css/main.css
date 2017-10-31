@@ -6580,7 +6580,8 @@ svg-icon > img[disabled] {
 
 .btn-progress {
   width: 100%;
-  height: 95px; }
+  height: 95px;
+  font-size: 20px; }
 
 .footerBg {
   background-image: url(../assets/footer.svg);
@@ -6614,6 +6615,23 @@ svg-icon > img[disabled] {
 
 .pfy {
   margin-top: -9px; }
+
+.fx1 {
+  margin-left: -65px; }
+
+.fx2 {
+  top: 31px; }
+  .fx2 .caret {
+    margin-left: 6px; }
+
+.fx3 {
+  top: -18px; }
+
+#btn-append-to-body, .selectDrive {
+  padding-left: 27px; }
+
+.selectDrive .caret {
+  margin-left: 6px; }
 
 /*
  * Copyright 2016 resin.io
@@ -6749,7 +6767,8 @@ svg-icon > img[disabled] {
   font-weight: 100; }
 
 body {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-family: 'Raleway',  sans-serif; }
 
 .section-footer {
   display: flex;
