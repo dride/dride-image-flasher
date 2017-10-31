@@ -1,6 +1,6 @@
-appId: io.resin.etcher
-copyright: Copyright 2016 Resinio Ltd
-productName: Etcher
+appId: io.dride.dif
+copyright: Copyright 2017 Dride, Inc.
+productName: Dride Image Flasher
 npmRebuild: true
 nodeGypRebuild: true
 publish: null
@@ -24,8 +24,8 @@ dmg:
       type: link
       path: /Applications
   window:
-    width: 540
-    height: 405
+    width: 400
+    height: 400
 win:
   icon: assets/icon.ico
 nsis:

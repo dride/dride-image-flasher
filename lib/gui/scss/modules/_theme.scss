@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-$palette-theme-dark-foreground: #fff;
-$palette-theme-dark-background: #535760;
+$palette-theme-dark-foreground: #333;
+$palette-theme-dark-background: #fff;
 $palette-theme-light-foreground: #666;
 $palette-theme-light-background: #fff;
 $palette-theme-dark-soft-foreground: #ddd;
@@ -27,10 +27,12 @@ $palette-theme-light-disabled-background: #d5d5d5;
 $palette-theme-light-disabled-foreground: #787c7f;
 $palette-theme-default-background: #ececec;
 $palette-theme-default-foreground: #b3b3b3;
-$palette-theme-primary-background: #5793db;
+$palette-theme-primary-background: #333;
 $palette-theme-primary-foreground: #fff;
 $palette-theme-warning-background: #ff912f;
 $palette-theme-danger-background: #d9534f;
 $palette-theme-danger-foreground: #fff;
 $palette-theme-success-background: #5fb835;
 $palette-theme-success-foreground: #fff;
+$palette-theme-progress-subBackground: #c3c3c3;
+$palette-theme-progress-background: #333;

@@ -23,7 +23,9 @@ svg-icon > img[disabled] {
 }
 
 .page-main .step-selection-text {
-  color: $palette-theme-dark-foreground;
+  color: $palette-theme-primary-background;
+  text-align: left;
+  padding-left: 26px;
 }
 
 .page-main .text-disabled > span {
@@ -68,12 +70,14 @@ svg-icon > img[disabled] {
 }
 
 .page-main .step-footer {
-  margin-top: 10px;
-  margin-bottom: -40px;
   color: $palette-theme-dark-disabled-foreground;
   font-size: 10px;
+  float: right;
+  margin-top: 8px;
 }
-
+.page-main .edit-icons{
+	margin-top: -25px !important;
+}
 .page-main .step-footer-split {
   margin-left: auto;
   margin-right: auto;
@@ -92,6 +96,7 @@ svg-icon > img[disabled] {
   color: $palette-theme-primary-background;
   border-radius: 0;
   padding: 0;
+  float: left;
 }
 
 .page-main .glyphicon {
@@ -100,9 +105,60 @@ svg-icon > img[disabled] {
 
 .page-main .step-name {
   font-weight: bold;
-  color: $palette-theme-primary-foreground;
+  color: $palette-theme-primary-background;
 }
 
 .page-main .step-size {
   color: $palette-theme-dark-disabled-foreground;
+}
+
+
+.btn-dride{
+	background-color: #fff !important;
+	border: 0;
+	border-radius: 4px;
+	color: #5a5a5a;
+	text-align: left !important;
+}
+.btn-dride:active, .btn-dride:focus{
+	box-shadow: none;
+	outline: 0;
+}
+.btn-progress{
+	width: 100%;
+	height: 95px;
+
+}
+.footerBg{
+    background-image: url(../assets/footer.svg);
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.button-default:focus, .button-default:hover {
+	color: #333;
+}
+.logo{
+	height: 59px;
+    float: right;
+    margin-top: -5px;
+    margin-left: 17px;
+    margin-right: 3px;
+}
+.p-15{
+	width: 140px !important;
+	margin-top: 0!important;
+}
+.glyphicon-question-sign, .glyphicon-cog{
+	color: #333;
+}
+.pfx{
+	height: 81px;
+    margin-top: 0px;
+}
+.pfy{
+	margin-top: -9px;
 }

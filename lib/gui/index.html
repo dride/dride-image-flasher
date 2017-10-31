@@ -10,6 +10,7 @@
   </head>
   <body ng-app="Etcher">
     <header class="section-header" ng-controller="HeaderController as header">
+	  <img class="logo" src="./assets/logoBlack.svg"/>
       <button class="button button-link"
         ng-click="header.openHelpPage()"
         tabindex="-1">
@@ -32,15 +33,8 @@
     </header>
 
     <main class="wrapper" ui-view></main>
+	<div class="footerBg"></div>
 
-    <div class="section-loader"
-      ng-controller="StateController as state"
-      ng-class="{
-        isFinish: state.currentName === 'success'
-      }">
-      <safe-webview
-        src="'https://etcher.io/success-banner/'"
-        refresh-now="state.previousName === 'success'"></safe-webview>
-    </div>
+
   </body>
 </html>

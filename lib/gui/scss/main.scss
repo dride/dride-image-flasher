@@ -109,8 +109,9 @@ body {
 }
 
 .wrapper {
-  height: 100%;
-  margin: 20px 60px;
+    height: 100%;
+    margin: -30px 20px;
+    background-color: #fff;
 }
 
 .section-header {
@@ -126,7 +127,7 @@ body {
 
 @keyframes focus-highlight {
   from {
-    outline: 2px solid $palette-theme-warning-background;
+    outline: 2px solid $palette-theme-progress-subBackground;
   }
 
   to {

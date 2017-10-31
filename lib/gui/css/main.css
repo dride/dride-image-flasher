@@ -5964,10 +5964,10 @@ button.close {
  * limitations under the License.
  */
 html {
-  background-color: #535760; }
+  background-color: #fff; }
 
 body {
-  background-color: #535760; }
+  background-color: #fff; }
 
 .checkbox input[type="checkbox"] {
   position: initial;
@@ -6045,8 +6045,8 @@ body {
   padding: 8px 25px; }
 
 .label-inset {
-  background-color: #3b3e45;
-  color: #919191; }
+  background-color: #e6e6e6;
+  color: black; }
 
 .label-danger {
   background-color: #d9534f;
@@ -6142,13 +6142,13 @@ body {
   color: #b3b3b3; }
 
 .button-primary, .progress-button {
-  background-color: #5793db;
+  background-color: #333;
   color: #fff; }
 
 .button-primary:focus, .progress-button:focus,
 .button-primary:hover,
 .progress-button:hover {
-  background-color: #2d78d2;
+  background-color: #1a1a1a;
   color: #fff; }
 
 .button-danger {
@@ -6237,7 +6237,7 @@ body {
   max-height: 250px;
   overflow: auto; }
   .modal-body a {
-    color: #5793db; }
+    color: #333; }
   .modal-body > p {
     white-space: pre-line; }
   .modal-body > p:last-child {
@@ -6315,13 +6315,13 @@ body {
 .progress-button {
   overflow: hidden; }
   .progress-button[active="true"] {
-    background-color: #ff912f; }
+    background-color: #c3c3c3; }
   .progress-button .progress-button__bar {
-    background-color: #ff9e49; }
+    background-color: #333; }
   .progress-button.progress-button--striped {
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #bd6415), color-stop(0.26, #fa9134), color-stop(0.5, #fa9134), color-stop(0.51, #bd6415), color-stop(0.75, #bd6415), color-stop(0.76, #fa9134), to(#fa9134)); }
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #050505), color-stop(0.26, #333333), color-stop(0.5, #333333), color-stop(0.51, #050505), color-stop(0.75, #050505), color-stop(0.76, #333333), to(#333333)); }
     .progress-button.progress-button--striped .progress-button__bar {
-      background-color: #ff9e49; }
+      background-color: #b3b3b3; }
 
 .progress-button__content {
   position: relative;
@@ -6411,8 +6411,8 @@ body {
     border: none;
     outline: none; }
   .modal-drive-selector-modal .list-group-item progress::-webkit-progress-value {
-    border-bottom: 1px solid #296cbd;
-    background-color: #5793db; }
+    border-bottom: 1px solid #0d0d0d;
+    background-color: #333; }
 
 .modal-drive-selector-modal .list-group-item-heading {
   font-size: 13px; }
@@ -6496,7 +6496,9 @@ svg-icon > img[disabled] {
   opacity: 0.2; }
 
 .page-main .step-selection-text {
-  color: #fff; }
+  color: #333;
+  text-align: left;
+  padding-left: 26px; }
 
 .page-main .text-disabled > span {
   color: #787c7f; }
@@ -6509,7 +6511,7 @@ svg-icon > img[disabled] {
 
 .page-main .step-border-left, .page-main .step-border-right {
   height: 2px;
-  background-color: #fff;
+  background-color: #333;
   position: absolute;
   width: 124px;
   top: 19px; }
@@ -6529,10 +6531,13 @@ svg-icon > img[disabled] {
   font-size: 10px; }
 
 .page-main .step-footer {
-  margin-top: 10px;
-  margin-bottom: -40px;
   color: #787c7f;
-  font-size: 10px; }
+  font-size: 10px;
+  float: right;
+  margin-top: 8px; }
+
+.page-main .edit-icons {
+  margin-top: -25px !important; }
 
 .page-main .step-footer-split {
   margin-left: auto;
@@ -6547,19 +6552,68 @@ svg-icon > img[disabled] {
 
 .page-main .button.step-footer, .page-main .step-footer.progress-button {
   font-size: 12px;
-  color: #5793db;
+  color: #333;
   border-radius: 0;
-  padding: 0; }
+  padding: 0;
+  float: left; }
 
 .page-main .glyphicon, .page-main .tick {
   vertical-align: text-top; }
 
 .page-main .step-name {
   font-weight: bold;
-  color: #fff; }
+  color: #333; }
 
 .page-main .step-size {
   color: #787c7f; }
+
+.btn-dride {
+  background-color: #fff !important;
+  border: 0;
+  border-radius: 4px;
+  color: #5a5a5a;
+  text-align: left !important; }
+
+.btn-dride:active, .btn-dride:focus {
+  box-shadow: none;
+  outline: 0; }
+
+.btn-progress {
+  width: 100%;
+  height: 95px; }
+
+.footerBg {
+  background-image: url(../assets/footer.svg);
+  width: 100%;
+  height: 76px;
+  position: absolute;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.button-default:focus, .button-default:hover {
+  color: #333; }
+
+.logo {
+  height: 59px;
+  float: right;
+  margin-top: -5px;
+  margin-left: 17px;
+  margin-right: 3px; }
+
+.p-15 {
+  width: 140px !important;
+  margin-top: 0 !important; }
+
+.glyphicon-question-sign, .glyphicon-cog {
+  color: #333; }
+
+.pfx {
+  height: 81px;
+  margin-top: 0px; }
+
+.pfy {
+  margin-top: -9px; }
 
 /*
  * Copyright 2016 resin.io
@@ -6577,13 +6631,14 @@ svg-icon > img[disabled] {
  * limitations under the License.
  */
 .page-settings .checkbox input[type="checkbox"] + * {
-  color: #fff; }
+  color: #333; }
 
 .page-settings .checkbox input[type="checkbox"]:not(:checked) + * {
   color: #ddd; }
 
 .page-settings .title {
-  color: #fff; }
+  color: #333;
+  margin-top: 41px; }
 
 /*
  * Copyright 2016 resin.io
@@ -6601,7 +6656,8 @@ svg-icon > img[disabled] {
  * limitations under the License.
  */
 .page-finish {
-  margin-top: -25px; }
+  margin-top: 72px;
+  text-align: center; }
 
 .page-finish .button-label {
   margin: 0 auto 15px;
@@ -6611,8 +6667,9 @@ svg-icon > img[disabled] {
   min-width: 170px; }
 
 .page-finish .title {
-  color: #fff;
-  font-weight: bold; }
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 21px; }
 
 .page-finish .huge-title {
   font-size: 3.5em; }
@@ -6660,8 +6717,8 @@ svg-icon > img[disabled] {
   position: absolute;
   top: 125px;
   left: 0;
-  background-color: #535760;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   font-weight: 300; }
   .page-finish .fallback-banner .caption {
     display: flex;
@@ -6680,6 +6737,16 @@ svg-icon > img[disabled] {
   .page-finish .fallback-banner .section-footer {
     border-top: none;
     height: 39px; }
+
+.getDrideApp {
+  margin-top: 31px;
+  word-spacing: 10px; }
+
+.btn-another {
+  background-color: #fff;
+  color: #f06060;
+  margin-top: 21px;
+  font-weight: 100; }
 
 body {
   letter-spacing: 1px; }
@@ -6729,7 +6796,8 @@ body {
 
 .wrapper {
   height: 100%;
-  margin: 20px 60px; }
+  margin: -30px 20px;
+  background-color: #fff; }
 
 .section-header {
   text-align: right;
@@ -6741,7 +6809,7 @@ body {
 
 @keyframes focus-highlight {
   from {
-    outline: 2px solid #ff912f; }
+    outline: 2px solid #c3c3c3; }
   to {
     outline: none; } }
 

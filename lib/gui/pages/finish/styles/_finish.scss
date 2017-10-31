@@ -15,7 +15,8 @@
  */
 
 .page-finish {
-  margin-top: -25px;
+  margin-top: 72px;
+  text-align: center;
 }
 
 .page-finish .button-label {
@@ -32,6 +33,7 @@
 .page-finish .title {
   color: $palette-theme-dark-foreground;
   font-weight: bold;
+  padding-bottom: 21px;
 }
 
 .page-finish .huge-title {
@@ -123,4 +125,14 @@
     border-top: none;
     height: 39px;
   }
+}
+.getDrideApp {
+	margin-top: 31px;
+	word-spacing: 10px;
+}
+.btn-another{
+	background-color: #fff;
+	color: #f06060;
+	margin-top: 21px;
+	font-weight: 100;
 }
