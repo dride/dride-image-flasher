@@ -39,16 +39,8 @@ build: off
 test_script:
   - node --version
   - npm --version
-  - bash .\scripts\ci\test.sh -o win32 -r %TARGET_ARCH%
   - bash .\scripts\ci\build-installers.sh -o win32 -r %TARGET_ARCH%
 
 deploy_script:
   - if %APPVEYOR_REPO_BRANCH%==master (bash .\scripts\ci\deploy.sh -o win32 -r %TARGET_ARCH%)
 
-notifications:
-
-  - provider: Webhook
-    url: https://webhooks.gitter.im/e/0becb34b32e20d389bb8
-    on_build_success: false
-    on_build_failure: true
-    on_build_status_changed: true
