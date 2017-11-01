@@ -41,6 +41,7 @@ test_script:
   - npm --version
   - bash .\scripts\ci\build-installers.sh -o win32 -r %TARGET_ARCH%
 
+
 deploy_script:
   - if %APPVEYOR_REPO_BRANCH%==master (bash .\scripts\ci\deploy.sh -o win32 -r %TARGET_ARCH%)
 
