@@ -130,7 +130,7 @@ endif
 ifeq ($(RELEASE_TYPE),snapshot)
 CURRENT_COMMIT_HASH = $(shell git log -1 --format="%h")
 APPLICATION_VERSION = $(PACKAGE_JSON_VERSION)+$(CURRENT_COMMIT_HASH)
-S3_BUCKET = resin-nightly-downloads
+S3_BUCKET = dride
 BINTRAY_COMPONENT = $(APPLICATION_NAME_LOWERCASE)-devel
 endif
 ifndef APPLICATION_VERSION
