@@ -61,7 +61,6 @@ install:
   - ./scripts/ci/install.sh -o $HOST_OS -r $TARGET_ARCH
 
 script:
-  - ./scripts/ci/test.sh -o $HOST_OS -r $TARGET_ARCH
   - ./scripts/ci/build-installers.sh -o $HOST_OS -r $TARGET_ARCH
 
 deploy:
