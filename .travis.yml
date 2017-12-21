@@ -50,7 +50,6 @@ os:
   - osx
 
 before_install:
-  - sudo apt-get install python-pip
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then PATH=/usr/local/opt/ccache/libexec:$PATH; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
       export HOST_OS="darwin";
